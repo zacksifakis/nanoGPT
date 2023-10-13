@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "train.py", line 261, in <module>
+    losses = estimate_loss()
+  File "/opt/conda/lib/python3.8/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "train.py", line 222, in estimate_loss
+    losses[k] = loss.item()
+KeyboardInterrupt

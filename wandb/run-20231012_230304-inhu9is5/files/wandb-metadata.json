@@ -1,0 +1,166 @@
+{
+    "os": "Linux-5.4.0-150-generic-x86_64-with-glibc2.10",
+    "python": "3.8.12",
+    "heartbeatAt": "2023-10-12T23:03:05.481878",
+    "startedAt": "2023-10-12T23:03:04.509157",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "config/train_my_dataset.py",
+        "--out_dir=out-mydataset-train-40length",
+        "--wandb_log=True",
+        "--wandb_project=cs839-question1",
+        "--wandb_run_name=n40length"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePathLocal": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/zacksifakis/nanoGPT.git",
+        "commit": "eba36e84649f3c6d840a93092cb779a260544d08"
+    },
+    "email": null,
+    "root": "/home/workspace",
+    "host": "d9d2f76a8eb8",
+    "username": "root",
+    "executable": "/opt/conda/bin/python",
+    "cpu_count": 10,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 1478.4375000000002,
+        "min": 1200.0,
+        "max": 4120.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1200.134,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 4072.333,
+            "min": 1200.0,
+            "max": 4200.0
+        },
+        {
+            "current": 1200.016,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.115,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1300.062,
+            "min": 1200.0,
+            "max": 4200.0
+        },
+        {
+            "current": 1200.261,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.017,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.124,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.043,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.166,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1300.197,
+            "min": 1200.0,
+            "max": 4200.0
+        },
+        {
+            "current": 4039.263,
+            "min": 1200.0,
+            "max": 4200.0
+        },
+        {
+            "current": 1200.056,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.161,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.38,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.087,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.36,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1201.607,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.239,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.612,
+            "min": 1200.0,
+            "max": 4100.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 1832.6994857788086,
+            "used": 1066.6418075561523
+        }
+    },
+    "gpu": "GeForce RTX 2080 Ti",
+    "gpu_count": 4,
+    "gpu_devices": [
+        {
+            "name": "GeForce RTX 2080 Ti",
+            "memory_total": 11554717696
+        },
+        {
+            "name": "GeForce RTX 2080 Ti",
+            "memory_total": 11554717696
+        },
+        {
+            "name": "GeForce RTX 2080 Ti",
+            "memory_total": 11554717696
+        },
+        {
+            "name": "GeForce RTX 2080 Ti",
+            "memory_total": 11552096256
+        }
+    ],
+    "memory": {
+        "total": 125.48540496826172
+    }
+}

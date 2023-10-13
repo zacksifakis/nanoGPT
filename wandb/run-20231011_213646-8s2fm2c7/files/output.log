@@ -1,0 +1,80 @@
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/torch/_dynamo/convert_frame.py", line 127, in _fn
+    return fn(*args, **kwargs)
+  File "/opt/conda/lib/python3.8/site-packages/torch/_dynamo/convert_frame.py", line 360, in _convert_frame_assert
+    return _compile(
+  File "/opt/conda/lib/python3.8/site-packages/torch/_dynamo/utils.py", line 180, in time_wrapper
+    r = func(*args, **kwargs)
+  File "/opt/conda/lib/python3.8/site-packages/torch/_dynamo/convert_frame.py", line 514, in _compile
+    raise InternalTorchDynamoError(str(e)).with_traceback(e.__traceback__) from None
+  File "/opt/conda/lib/python3.8/site-packages/torch/_dynamo/convert_frame.py", line 430, in _compile
+    out_code = transform_code_object(code, transform)
+  File "/opt/conda/lib/python3.8/site-packages/torch/_dynamo/bytecode_transformation.py", line 1000, in transform_code_object
+    transformations(instructions, code_options)
+  File "/opt/conda/lib/python3.8/site-packages/torch/_dynamo/convert_frame.py", line 400, in transform
+    tracer = InstructionTranslator(
+  File "/opt/conda/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 1976, in __init__
+    self.symbolic_locals = collections.OrderedDict(
+  File "/opt/conda/lib/python3.8/site-packages/torch/_dynamo/symbolic_convert.py", line 1979, in <genexpr>
+    VariableBuilder(self, LocalSource(k))(f_locals[k]),
+  File "/opt/conda/lib/python3.8/site-packages/torch/_dynamo/variables/builder.py", line 206, in __call__
+    vt = self._wrap(value).clone(**self.options())
+  File "/opt/conda/lib/python3.8/site-packages/torch/_dynamo/variables/builder.py", line 371, in _wrap
+    return type_dispatch(self, value)
+  File "/opt/conda/lib/python3.8/site-packages/torch/_dynamo/variables/builder.py", line 896, in wrap_tensor
+    tensor_variable = wrap_fx_proxy(
+  File "/opt/conda/lib/python3.8/site-packages/torch/_dynamo/variables/builder.py", line 1115, in wrap_fx_proxy
+    return wrap_fx_proxy_cls(
+  File "/opt/conda/lib/python3.8/site-packages/torch/_dynamo/variables/builder.py", line 1176, in wrap_fx_proxy_cls
+    example_value = wrap_to_fake_tensor_and_record(
+  File "/opt/conda/lib/python3.8/contextlib.py", line 120, in __exit__
+    next(self.gen)
+  File "/opt/conda/lib/python3.8/site-packages/torch/_dynamo/utils.py", line 608, in preserve_rng_state
+    torch.cuda.set_rng_state(cuda_rng_state)
+  File "/opt/conda/lib/python3.8/site-packages/torch/cuda/random.py", line 64, in set_rng_state
+    _lazy_call(cb)
+  File "/opt/conda/lib/python3.8/site-packages/torch/cuda/__init__.py", line 202, in _lazy_call
+    callable()
+  File "/opt/conda/lib/python3.8/site-packages/torch/cuda/random.py", line 62, in cb
+    default_generator.set_state(new_state_copy)
+torch._dynamo.exc.InternalTorchDynamoError: CUDA error: out of memory
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+You can suppress this exception and fall back to eager by setting:
+    import torch._dynamo
+    torch._dynamo.config.suppress_errors = True
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "train.py", line 261, in <module>
+    losses = estimate_loss()
+  File "/opt/conda/lib/python3.8/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "train.py", line 221, in estimate_loss
+    logits, loss = model(X, Y)
+  File "/opt/conda/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1502, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/conda/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/conda/lib/python3.8/site-packages/torch/_dynamo/eval_frame.py", line 295, in _fn
+    return fn(*args, **kwargs)
+  File "/opt/conda/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1502, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/conda/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/conda/lib/python3.8/site-packages/torch/_dynamo/eval_frame.py", line 448, in catch_errors
+    return callback(frame, cache_size, hooks, frame_state)
+  File "/opt/conda/lib/python3.8/site-packages/torch/_dynamo/convert_frame.py", line 526, in _convert_frame
+    result = inner_convert(frame, cache_size, hooks, frame_state)
+  File "/opt/conda/lib/python3.8/site-packages/torch/_dynamo/convert_frame.py", line 134, in _fn
+    torch.cuda.set_rng_state(cuda_rng_state)
+  File "/opt/conda/lib/python3.8/site-packages/torch/cuda/random.py", line 64, in set_rng_state
+    _lazy_call(cb)
+  File "/opt/conda/lib/python3.8/site-packages/torch/cuda/__init__.py", line 202, in _lazy_call
+    callable()
+  File "/opt/conda/lib/python3.8/site-packages/torch/cuda/random.py", line 62, in cb
+    default_generator.set_state(new_state_copy)
+RuntimeError: CUDA error: out of memory
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.

@@ -1,0 +1,83 @@
+
+step 0: train loss 4.2891, val loss 4.2965
+iter 0: loss 4.2905, time 22470.01ms, mfu -100.00%
+iter 10: loss 3.1331, time 46.13ms, mfu 8.08%
+iter 20: loss 2.7871, time 46.66ms, mfu 8.07%
+iter 30: loss 2.6391, time 46.29ms, mfu 8.07%
+iter 40: loss 2.6117, time 46.35ms, mfu 8.06%
+iter 50: loss 2.5869, time 46.46ms, mfu 8.06%
+iter 60: loss 2.5659, time 46.05ms, mfu 8.06%
+iter 70: loss 2.5377, time 46.10ms, mfu 8.07%
+iter 80: loss 2.5302, time 46.25ms, mfu 8.06%
+iter 90: loss 2.5483, time 46.18ms, mfu 8.06%
+iter 100: loss 2.5261, time 46.25ms, mfu 8.06%
+iter 110: loss 2.5206, time 46.23ms, mfu 8.06%
+iter 120: loss 2.5424, time 46.26ms, mfu 8.06%
+iter 130: loss 2.4937, time 46.39ms, mfu 8.06%
+iter 140: loss 2.4837, time 46.15ms, mfu 8.06%
+iter 150: loss 2.4630, time 46.25ms, mfu 8.06%
+iter 160: loss 2.4324, time 47.77ms, mfu 8.03%
+iter 170: loss 2.3944, time 46.77ms, mfu 8.03%
+iter 180: loss 2.3411, time 46.30ms, mfu 8.03%
+iter 190: loss 2.2816, time 46.41ms, mfu 8.03%
+iter 200: loss 2.2370, time 46.57ms, mfu 8.03%
+iter 210: loss 2.2248, time 46.40ms, mfu 8.03%
+iter 220: loss 2.1955, time 46.43ms, mfu 8.03%
+iter 230: loss 2.1889, time 47.15ms, mfu 8.01%
+iter 240: loss 2.1401, time 46.64ms, mfu 8.01%
+step 250: train loss 2.0574, val loss 2.2066
+saving checkpoint to out-mydataset-train-20length
+iter 250: loss 2.1196, time 19198.18ms, mfu 7.21%
+iter 260: loss 2.0816, time 46.17ms, mfu 7.30%
+iter 270: loss 2.0947, time 46.07ms, mfu 7.38%
+iter 280: loss 2.0175, time 45.91ms, mfu 7.45%
+iter 290: loss 2.0565, time 46.33ms, mfu 7.51%
+iter 300: loss 2.0153, time 46.75ms, mfu 7.56%
+iter 310: loss 1.9945, time 46.52ms, mfu 7.60%
+iter 320: loss 1.9543, time 46.43ms, mfu 7.64%
+iter 330: loss 1.9692, time 46.98ms, mfu 7.67%
+iter 340: loss 1.9593, time 46.85ms, mfu 7.70%
+iter 350: loss 1.9686, time 46.97ms, mfu 7.72%
+iter 360: loss 1.9262, time 47.42ms, mfu 7.74%
+iter 370: loss 1.8420, time 47.57ms, mfu 7.75%
+iter 380: loss 1.8782, time 46.81ms, mfu 7.77%
+iter 390: loss 1.8761, time 46.70ms, mfu 7.79%
+iter 400: loss 1.8534, time 46.39ms, mfu 7.81%
+iter 410: loss 1.8407, time 46.49ms, mfu 7.83%
+iter 420: loss 1.8427, time 46.61ms, mfu 7.85%
+iter 430: loss 1.7741, time 46.67ms, mfu 7.86%
+iter 440: loss 1.7741, time 46.87ms, mfu 7.87%
+iter 450: loss 1.7616, time 47.34ms, mfu 7.87%
+iter 460: loss 1.7582, time 46.99ms, mfu 7.88%
+iter 470: loss 1.7973, time 46.79ms, mfu 7.89%
+iter 480: loss 1.7373, time 46.46ms, mfu 7.90%
+iter 490: loss 1.7594, time 46.88ms, mfu 7.90%
+step 500: train loss 1.6409, val loss 1.9624
+saving checkpoint to out-mydataset-train-20length
+iter 500: loss 1.6948, time 19566.90ms, mfu 7.12%
+iter 510: loss 1.7462, time 46.67ms, mfu 7.20%
+iter 520: loss 1.7228, time 46.79ms, mfu 7.28%
+iter 530: loss 1.6844, time 46.46ms, mfu 7.35%
+iter 540: loss 1.6911, time 46.07ms, mfu 7.43%
+iter 550: loss 1.7181, time 46.20ms, mfu 7.49%
+iter 560: loss 1.6503, time 46.78ms, mfu 7.54%
+iter 570: loss 1.6397, time 47.31ms, mfu 7.57%
+iter 580: loss 1.6660, time 47.20ms, mfu 7.60%
+iter 590: loss 1.6641, time 46.43ms, mfu 7.65%
+iter 600: loss 1.6429, time 46.57ms, mfu 7.68%
+iter 610: loss 1.6276, time 46.38ms, mfu 7.72%
+iter 620: loss 1.5641, time 46.73ms, mfu 7.74%
+iter 630: loss 1.5931, time 46.68ms, mfu 7.77%
+iter 640: loss 1.5716, time 47.00ms, mfu 7.78%
+iter 650: loss 1.5757, time 47.09ms, mfu 7.80%
+iter 660: loss 1.6160, time 47.31ms, mfu 7.80%
+iter 670: loss 1.5960, time 46.99ms, mfu 7.82%
+iter 680: loss 1.5445, time 46.51ms, mfu 7.84%
+iter 690: loss 1.5331, time 46.85ms, mfu 7.85%
+iter 700: loss 1.5304, time 46.26ms, mfu 7.87%
+iter 710: loss 1.5764, time 47.27ms, mfu 7.87%
+iter 720: loss 1.4992, time 47.10ms, mfu 7.87%
+Traceback (most recent call last):
+  File "train.py", line 323, in <module>
+    lossf = loss.item() * gradient_accumulation_steps
+KeyboardInterrupt

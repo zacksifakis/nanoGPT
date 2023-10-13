@@ -1,0 +1,6 @@
+
+step 0: train loss 4.2419, train perplexity 69.5422, val loss 4.2383, val perplexity 69.2906
+Traceback (most recent call last):
+  File "train.py", line 296, in <module>
+    if losses['val'] < best_val_loss or always_save_checkpoint:
+TypeError: '<' not supported between instances of 'dict' and 'float'

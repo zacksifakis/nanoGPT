@@ -37,7 +37,7 @@ eval_interval = 2000
 log_interval = 1
 eval_iters = 200
 eval_only = False # if True, script exits right after the first eval
-always_save_checkpoint = True # if True, always save a checkpoint after each eval
+always_save_checkpoint = False # if True, always save a checkpoint after each eval
 init_from = 'scratch' # 'scratch' or 'resume' or 'gpt2*'
 # wandb logging
 wandb_log = False # disabled by default
@@ -257,6 +257,9 @@ while True:
         param_group['lr'] = lr
 
     # evaluate the loss on train/val sets and write checkpoints
+    # if iter_num % eval_interval == 0 and master_process:
+    #     losses = estimate_loss_and_perplexity()
+    #     print(f"step {iter_num}: train loss {losses['train']['loss']:.4f}, train perplexity {losses['train']['perplexity']:.4f}, val loss {losses['val']['loss']:.4f}, val perplexity {losses['val']['perplexity']:.4f}")
     if iter_num % eval_interval == 0 and master_process:
         losses = estimate_loss()
         print(f"step {iter_num}: train loss {losses['train']:.4f}, val loss {losses['val']:.4f}")

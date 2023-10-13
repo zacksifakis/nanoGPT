@@ -1,0 +1,434 @@
+2023-10-13 01:04:33,724 INFO    StreamThr :8398 [internal.py:wandb_internal():86] W&B internal server running at pid: 8398, started at: 2023-10-13 01:04:33.723684
+2023-10-13 01:04:33,727 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status
+2023-10-13 01:04:33,732 INFO    WriterThread:8398 [datastore.py:open_for_write():85] open: /home/workspace/wandb/run-20231013_010433-12gdkwy0/run-12gdkwy0.wandb
+2023-10-13 01:04:33,733 DEBUG   SenderThread:8398 [sender.py:send():380] send: header
+2023-10-13 01:04:33,799 DEBUG   SenderThread:8398 [sender.py:send():380] send: run
+2023-10-13 01:04:34,130 INFO    SenderThread:8398 [dir_watcher.py:__init__():211] watching files in: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files
+2023-10-13 01:04:34,131 INFO    SenderThread:8398 [sender.py:_start_run_threads():1122] run started: 12gdkwy0 with start time 1697159073.723179
+2023-10-13 01:04:34,155 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: check_version
+2023-10-13 01:04:34,155 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: check_version
+2023-10-13 01:04:34,236 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: run_start
+2023-10-13 01:04:34,243 DEBUG   HandlerThread:8398 [system_info.py:__init__():32] System info init
+2023-10-13 01:04:34,244 DEBUG   HandlerThread:8398 [system_info.py:__init__():47] System info init done
+2023-10-13 01:04:34,244 INFO    HandlerThread:8398 [system_monitor.py:start():194] Starting system monitor
+2023-10-13 01:04:34,244 INFO    SystemMonitor:8398 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-10-13 01:04:34,245 INFO    HandlerThread:8398 [system_monitor.py:probe():214] Collecting system info
+2023-10-13 01:04:34,246 INFO    SystemMonitor:8398 [interfaces.py:start():190] Started cpu monitoring
+2023-10-13 01:04:34,247 INFO    SystemMonitor:8398 [interfaces.py:start():190] Started disk monitoring
+2023-10-13 01:04:34,248 INFO    SystemMonitor:8398 [interfaces.py:start():190] Started gpu monitoring
+2023-10-13 01:04:34,249 INFO    SystemMonitor:8398 [interfaces.py:start():190] Started memory monitoring
+2023-10-13 01:04:34,250 INFO    SystemMonitor:8398 [interfaces.py:start():190] Started network monitoring
+2023-10-13 01:04:34,668 DEBUG   HandlerThread:8398 [system_info.py:probe():196] Probing system
+2023-10-13 01:04:34,679 DEBUG   HandlerThread:8398 [system_info.py:_probe_git():181] Probing git
+2023-10-13 01:04:34,700 DEBUG   HandlerThread:8398 [system_info.py:_probe_git():189] Probing git done
+2023-10-13 01:04:34,701 DEBUG   HandlerThread:8398 [system_info.py:probe():244] Probing system done
+2023-10-13 01:04:34,701 DEBUG   HandlerThread:8398 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-150-generic-x86_64-with-glibc2.10', 'python': '3.8.12', 'heartbeatAt': '2023-10-13T01:04:34.669025', 'startedAt': '2023-10-13T01:04:33.712299', 'docker': None, 'cuda': None, 'args': ('config/train_shakespeare_char.py', '--out_dir=out-finetune-train-60length', '--wandb_log=True', '--wandb_project=cs839-question1', '--wandb_run_name=finetune-60percent', '--init_from=resume'), 'state': 'running', 'program': 'train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/zacksifakis/nanoGPT.git', 'commit': 'eba36e84649f3c6d840a93092cb779a260544d08'}, 'email': None, 'root': '/home/workspace', 'host': 'd9d2f76a8eb8', 'username': 'root', 'executable': '/opt/conda/bin/python', 'cpu_count': 10, 'cpu_count_logical': 20, 'cpu_freq': {'current': 1493.2902, 'min': 1200.0, 'max': 4120.0}, 'cpu_freq_per_core': [{'current': 1200.101, 'min': 1200.0, 'max': 4100.0}, {'current': 1300.228, 'min': 1200.0, 'max': 4200.0}, {'current': 1200.017, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.092, 'min': 1200.0, 'max': 4100.0}, {'current': 4112.074, 'min': 1200.0, 'max': 4200.0}, {'current': 1200.088, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.137, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.398, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.053, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.042, 'min': 1200.0, 'max': 4100.0}, {'current': 4046.329, 'min': 1200.0, 'max': 4200.0}, {'current': 1300.296, 'min': 1200.0, 'max': 4200.0}, {'current': 1200.131, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.244, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.691, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.152, 'min': 1200.0, 'max': 4100.0}, {'current': 1201.24, 'min': 1200.0, 'max': 4100.0}, {'current': 1201.224, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.43, 'min': 1200.0, 'max': 4100.0}, {'current': 1222.371, 'min': 1200.0, 'max': 4100.0}], 'disk': {'/': {'total': 1832.6994857788086, 'used': 1066.642333984375}}, 'gpu': 'GeForce RTX 2080 Ti', 'gpu_count': 4, 'gpu_devices': [{'name': 'GeForce RTX 2080 Ti', 'memory_total': 11554717696}, {'name': 'GeForce RTX 2080 Ti', 'memory_total': 11554717696}, {'name': 'GeForce RTX 2080 Ti', 'memory_total': 11554717696}, {'name': 'GeForce RTX 2080 Ti', 'memory_total': 11552096256}], 'memory': {'total': 125.48540496826172}}
+2023-10-13 01:04:34,701 INFO    HandlerThread:8398 [system_monitor.py:probe():224] Finished collecting system info
+2023-10-13 01:04:34,701 INFO    HandlerThread:8398 [system_monitor.py:probe():227] Publishing system info
+2023-10-13 01:04:34,702 DEBUG   HandlerThread:8398 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-10-13 01:04:34,703 DEBUG   HandlerThread:8398 [system_info.py:_save_pip():68] Saving pip packages done
+2023-10-13 01:04:34,703 DEBUG   HandlerThread:8398 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-10-13 01:04:35,137 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_created():271] file/dir created: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/conda-environment.yaml
+2023-10-13 01:04:35,138 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_created():271] file/dir created: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/requirements.txt
+2023-10-13 01:04:35,155 DEBUG   HandlerThread:8398 [system_info.py:_save_conda():87] Saving conda packages done
+2023-10-13 01:04:35,157 INFO    HandlerThread:8398 [system_monitor.py:probe():229] Finished publishing system info
+2023-10-13 01:04:35,162 DEBUG   SenderThread:8398 [sender.py:send():380] send: files
+2023-10-13 01:04:35,163 INFO    SenderThread:8398 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-10-13 01:04:35,177 DEBUG   SenderThread:8398 [sender.py:send():380] send: telemetry
+2023-10-13 01:04:35,178 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-13 01:04:35,178 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-13 01:04:35,180 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: stop_status
+2023-10-13 01:04:35,544 INFO    wandb-upload_0:8398 [upload_job.py:push():131] Uploaded file /tmp/tmptlmtpt73wandb/jisa8tyg-wandb-metadata.json
+2023-10-13 01:04:36,132 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_created():271] file/dir created: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/wandb-metadata.json
+2023-10-13 01:04:39,379 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:04:44,380 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:04:46,807 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-13 01:04:46,810 DEBUG   SenderThread:8398 [sender.py:send():380] send: history
+2023-10-13 01:04:46,810 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: summary_record
+2023-10-13 01:04:46,816 INFO    SenderThread:8398 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-13 01:04:47,137 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_created():271] file/dir created: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/wandb-summary.json
+2023-10-13 01:04:47,137 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_created():271] file/dir created: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:04:49,138 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:04:49,817 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:04:50,193 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-13 01:04:50,194 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: stop_status
+2023-10-13 01:04:50,201 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-13 01:04:55,318 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:04:59,143 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:05:00,760 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:05:01,144 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:05:03,145 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:05:05,146 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:05:05,173 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-13 01:05:05,174 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: stop_status
+2023-10-13 01:05:05,182 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-13 01:05:05,916 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:05:06,146 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/config.yaml
+2023-10-13 01:05:07,147 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:05:09,148 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:05:11,149 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:05:11,198 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:05:16,199 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:05:18,443 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-13 01:05:18,445 DEBUG   SenderThread:8398 [sender.py:send():380] send: history
+2023-10-13 01:05:18,446 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: summary_record
+2023-10-13 01:05:18,451 INFO    SenderThread:8398 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-13 01:05:19,153 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/wandb-summary.json
+2023-10-13 01:05:20,194 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-13 01:05:20,201 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-13 01:05:20,202 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: stop_status
+2023-10-13 01:05:21,154 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:05:21,301 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:05:26,302 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:05:31,159 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:05:31,581 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:05:33,160 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:05:34,250 DEBUG   SystemMonitor:8398 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-10-13 01:05:34,253 DEBUG   SenderThread:8398 [sender.py:send():380] send: stats
+2023-10-13 01:05:35,161 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:05:35,172 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-13 01:05:35,175 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-13 01:05:35,176 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: stop_status
+2023-10-13 01:05:36,746 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:05:37,162 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:05:39,163 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:05:41,164 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:05:42,571 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:05:47,572 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:05:49,020 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-13 01:05:49,022 DEBUG   SenderThread:8398 [sender.py:send():380] send: history
+2023-10-13 01:05:49,022 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: summary_record
+2023-10-13 01:05:49,028 INFO    SenderThread:8398 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-13 01:05:49,168 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/wandb-summary.json
+2023-10-13 01:05:50,193 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-13 01:05:50,199 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-13 01:05:50,200 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: stop_status
+2023-10-13 01:05:51,170 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:05:53,311 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:05:58,313 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:06:01,174 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:06:03,176 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:06:03,680 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:06:04,255 DEBUG   SenderThread:8398 [sender.py:send():380] send: stats
+2023-10-13 01:06:05,173 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-13 01:06:05,177 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:06:05,179 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-13 01:06:05,180 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: stop_status
+2023-10-13 01:06:07,178 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:06:08,863 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:06:09,179 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:06:11,180 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:06:13,181 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:06:14,283 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:06:19,284 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:06:19,492 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-13 01:06:19,494 DEBUG   SenderThread:8398 [sender.py:send():380] send: history
+2023-10-13 01:06:19,494 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: summary_record
+2023-10-13 01:06:19,495 INFO    SenderThread:8398 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-13 01:06:20,185 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/wandb-summary.json
+2023-10-13 01:06:20,238 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-13 01:06:20,238 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-13 01:06:20,239 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: stop_status
+2023-10-13 01:06:21,186 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:06:24,381 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:06:29,382 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:06:31,191 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:06:33,192 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:06:34,258 DEBUG   SenderThread:8398 [sender.py:send():380] send: stats
+2023-10-13 01:06:34,581 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:06:35,193 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:06:35,215 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-13 01:06:35,218 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-13 01:06:35,218 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: stop_status
+2023-10-13 01:06:37,195 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:06:39,196 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:06:39,773 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:06:41,197 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:06:43,198 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:06:44,981 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:06:49,982 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:06:50,215 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-13 01:06:50,215 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-13 01:06:50,216 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: stop_status
+2023-10-13 01:06:50,349 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-13 01:06:50,351 DEBUG   SenderThread:8398 [sender.py:send():380] send: history
+2023-10-13 01:06:50,352 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: summary_record
+2023-10-13 01:06:50,353 INFO    SenderThread:8398 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-13 01:06:51,202 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/wandb-summary.json
+2023-10-13 01:06:53,203 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:06:55,354 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:07:00,617 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:07:01,208 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:07:03,208 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:07:04,267 DEBUG   SenderThread:8398 [sender.py:send():380] send: stats
+2023-10-13 01:07:05,210 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:07:05,216 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-13 01:07:05,217 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-13 01:07:05,217 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: stop_status
+2023-10-13 01:07:05,999 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:07:07,211 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:07:09,212 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:07:11,213 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:07:11,413 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:07:13,214 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:07:16,415 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:07:20,215 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-13 01:07:20,216 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-13 01:07:20,217 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: stop_status
+2023-10-13 01:07:20,967 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-13 01:07:20,968 DEBUG   SenderThread:8398 [sender.py:send():380] send: history
+2023-10-13 01:07:20,969 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: summary_record
+2023-10-13 01:07:20,970 INFO    SenderThread:8398 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-13 01:07:21,224 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/wandb-summary.json
+2023-10-13 01:07:21,971 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:07:23,225 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:07:26,972 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:07:31,230 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:07:32,281 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:07:33,231 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:07:34,262 DEBUG   SenderThread:8398 [sender.py:send():380] send: stats
+2023-10-13 01:07:35,217 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-13 01:07:35,217 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-13 01:07:35,218 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: stop_status
+2023-10-13 01:07:35,232 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:07:37,233 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:07:37,665 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:07:39,234 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:07:41,235 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:07:43,101 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:07:43,236 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:07:48,102 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:07:50,215 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-13 01:07:50,216 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-13 01:07:50,217 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: stop_status
+2023-10-13 01:07:51,453 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-13 01:07:51,454 DEBUG   SenderThread:8398 [sender.py:send():380] send: history
+2023-10-13 01:07:51,455 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: summary_record
+2023-10-13 01:07:51,456 INFO    SenderThread:8398 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-13 01:07:52,241 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/wandb-summary.json
+2023-10-13 01:07:53,242 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:07:53,457 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:07:58,458 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:08:01,246 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:08:03,247 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:08:03,613 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:08:04,265 DEBUG   SenderThread:8398 [sender.py:send():380] send: stats
+2023-10-13 01:08:05,215 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-13 01:08:05,216 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-13 01:08:05,217 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: stop_status
+2023-10-13 01:08:05,248 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:08:07,249 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:08:09,011 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:08:09,250 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:08:11,252 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:08:13,253 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:08:14,461 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:08:19,462 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:08:20,218 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-13 01:08:20,218 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-13 01:08:20,219 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: stop_status
+2023-10-13 01:08:22,098 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-13 01:08:22,100 DEBUG   SenderThread:8398 [sender.py:send():380] send: history
+2023-10-13 01:08:22,100 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: summary_record
+2023-10-13 01:08:22,100 INFO    SenderThread:8398 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-13 01:08:22,257 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/wandb-summary.json
+2023-10-13 01:08:23,258 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:08:25,101 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:08:30,102 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:08:33,263 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:08:34,267 DEBUG   SenderThread:8398 [sender.py:send():380] send: stats
+2023-10-13 01:08:35,161 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:08:35,216 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-13 01:08:35,217 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-13 01:08:35,217 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: stop_status
+2023-10-13 01:08:35,264 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:08:37,265 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:08:39,267 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:08:40,589 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:08:41,268 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:08:43,269 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:08:45,270 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:08:46,508 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:08:49,272 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:08:50,216 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-13 01:08:50,216 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-13 01:08:50,217 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: stop_status
+2023-10-13 01:08:52,343 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:08:53,410 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-13 01:08:53,412 DEBUG   SenderThread:8398 [sender.py:send():380] send: history
+2023-10-13 01:08:53,412 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: summary_record
+2023-10-13 01:08:53,417 INFO    SenderThread:8398 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-13 01:08:54,274 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/wandb-summary.json
+2023-10-13 01:08:55,275 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:08:57,419 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:09:01,278 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:09:02,889 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:09:03,279 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:09:04,269 DEBUG   SenderThread:8398 [sender.py:send():380] send: stats
+2023-10-13 01:09:05,216 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-13 01:09:05,216 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-13 01:09:05,217 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: stop_status
+2023-10-13 01:09:05,280 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:09:07,281 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:09:08,325 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:09:09,282 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:09:11,283 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:09:13,284 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:09:14,236 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:09:15,285 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:09:19,237 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:09:20,217 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-13 01:09:20,218 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-13 01:09:20,218 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: stop_status
+2023-10-13 01:09:22,258 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-13 01:09:22,260 DEBUG   SenderThread:8398 [sender.py:send():380] send: history
+2023-10-13 01:09:22,260 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: summary_record
+2023-10-13 01:09:22,261 INFO    SenderThread:8398 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-13 01:09:22,288 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/wandb-summary.json
+2023-10-13 01:09:23,289 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:09:24,262 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:09:29,292 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:09:29,421 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:09:31,293 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:09:31,511 DEBUG   SenderThread:8398 [sender.py:send():380] send: exit
+2023-10-13 01:09:31,511 INFO    SenderThread:8398 [sender.py:send_exit():585] handling exit code: 255
+2023-10-13 01:09:31,512 INFO    SenderThread:8398 [sender.py:send_exit():587] handling runtime: 297
+2023-10-13 01:09:31,513 INFO    SenderThread:8398 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-13 01:09:31,514 INFO    SenderThread:8398 [sender.py:send_exit():593] send defer
+2023-10-13 01:09:31,514 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: defer
+2023-10-13 01:09:31,514 INFO    HandlerThread:8398 [handler.py:handle_request_defer():172] handle defer: 0
+2023-10-13 01:09:31,515 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: defer
+2023-10-13 01:09:31,515 INFO    SenderThread:8398 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-10-13 01:09:31,515 INFO    SenderThread:8398 [sender.py:transition_state():613] send defer: 1
+2023-10-13 01:09:31,515 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: defer
+2023-10-13 01:09:31,515 INFO    HandlerThread:8398 [handler.py:handle_request_defer():172] handle defer: 1
+2023-10-13 01:09:31,516 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: defer
+2023-10-13 01:09:31,516 INFO    SenderThread:8398 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-10-13 01:09:31,516 INFO    SenderThread:8398 [sender.py:transition_state():613] send defer: 2
+2023-10-13 01:09:31,516 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: defer
+2023-10-13 01:09:31,516 INFO    HandlerThread:8398 [handler.py:handle_request_defer():172] handle defer: 2
+2023-10-13 01:09:31,517 INFO    HandlerThread:8398 [system_monitor.py:finish():203] Stopping system monitor
+2023-10-13 01:09:31,517 DEBUG   SystemMonitor:8398 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-10-13 01:09:31,518 DEBUG   SystemMonitor:8398 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-10-13 01:09:31,520 INFO    HandlerThread:8398 [interfaces.py:finish():202] Joined cpu monitor
+2023-10-13 01:09:31,521 INFO    HandlerThread:8398 [interfaces.py:finish():202] Joined disk monitor
+2023-10-13 01:09:31,566 INFO    HandlerThread:8398 [interfaces.py:finish():202] Joined gpu monitor
+2023-10-13 01:09:31,566 INFO    HandlerThread:8398 [interfaces.py:finish():202] Joined memory monitor
+2023-10-13 01:09:31,566 INFO    HandlerThread:8398 [interfaces.py:finish():202] Joined network monitor
+2023-10-13 01:09:31,567 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: defer
+2023-10-13 01:09:31,567 INFO    SenderThread:8398 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-10-13 01:09:31,567 INFO    SenderThread:8398 [sender.py:transition_state():613] send defer: 3
+2023-10-13 01:09:31,567 DEBUG   SenderThread:8398 [sender.py:send():380] send: stats
+2023-10-13 01:09:31,567 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: defer
+2023-10-13 01:09:31,568 INFO    HandlerThread:8398 [handler.py:handle_request_defer():172] handle defer: 3
+2023-10-13 01:09:31,568 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: defer
+2023-10-13 01:09:31,568 INFO    SenderThread:8398 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-10-13 01:09:31,568 INFO    SenderThread:8398 [sender.py:transition_state():613] send defer: 4
+2023-10-13 01:09:31,568 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: defer
+2023-10-13 01:09:31,568 INFO    HandlerThread:8398 [handler.py:handle_request_defer():172] handle defer: 4
+2023-10-13 01:09:31,568 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: defer
+2023-10-13 01:09:31,568 INFO    SenderThread:8398 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-10-13 01:09:31,569 INFO    SenderThread:8398 [sender.py:transition_state():613] send defer: 5
+2023-10-13 01:09:31,569 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: defer
+2023-10-13 01:09:31,569 INFO    HandlerThread:8398 [handler.py:handle_request_defer():172] handle defer: 5
+2023-10-13 01:09:31,569 DEBUG   SenderThread:8398 [sender.py:send():380] send: summary
+2023-10-13 01:09:31,569 INFO    SenderThread:8398 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-13 01:09:31,570 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: defer
+2023-10-13 01:09:31,570 INFO    SenderThread:8398 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-10-13 01:09:31,570 INFO    SenderThread:8398 [sender.py:transition_state():613] send defer: 6
+2023-10-13 01:09:31,570 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: defer
+2023-10-13 01:09:31,570 INFO    HandlerThread:8398 [handler.py:handle_request_defer():172] handle defer: 6
+2023-10-13 01:09:31,570 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: defer
+2023-10-13 01:09:31,570 INFO    SenderThread:8398 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-10-13 01:09:31,570 INFO    SenderThread:8398 [sender.py:transition_state():613] send defer: 7
+2023-10-13 01:09:31,570 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: status_report
+2023-10-13 01:09:31,570 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: defer
+2023-10-13 01:09:31,571 INFO    HandlerThread:8398 [handler.py:handle_request_defer():172] handle defer: 7
+2023-10-13 01:09:31,571 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: defer
+2023-10-13 01:09:31,571 INFO    SenderThread:8398 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-10-13 01:09:32,294 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/wandb-summary.json
+2023-10-13 01:09:32,511 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: poll_exit
+2023-10-13 01:09:33,265 INFO    SenderThread:8398 [sender.py:transition_state():613] send defer: 8
+2023-10-13 01:09:33,265 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: poll_exit
+2023-10-13 01:09:33,265 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: defer
+2023-10-13 01:09:33,266 INFO    HandlerThread:8398 [handler.py:handle_request_defer():172] handle defer: 8
+2023-10-13 01:09:33,266 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: defer
+2023-10-13 01:09:33,267 INFO    SenderThread:8398 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-10-13 01:09:33,267 INFO    SenderThread:8398 [job_builder.py:build():281] Attempting to build job artifact
+2023-10-13 01:09:33,268 INFO    SenderThread:8398 [job_builder.py:_get_source_type():393] is repo sourced job
+2023-10-13 01:09:33,273 INFO    SenderThread:8398 [job_builder.py:build():369] adding wandb-job metadata file
+2023-10-13 01:09:33,283 INFO    SenderThread:8398 [sender.py:transition_state():613] send defer: 9
+2023-10-13 01:09:33,283 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: defer
+2023-10-13 01:09:33,284 DEBUG   SenderThread:8398 [sender.py:send():380] send: artifact
+2023-10-13 01:09:33,284 INFO    HandlerThread:8398 [handler.py:handle_request_defer():172] handle defer: 9
+2023-10-13 01:09:33,294 INFO    Thread-12 :8398 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:09:33,512 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: poll_exit
+2023-10-13 01:09:33,765 INFO    SenderThread:8398 [sender.py:send_artifact():1456] sent artifact job-https___github.com_zacksifakis_nanoGPT.git_train.py - {'id': 'QXJ0aWZhY3Q6NjAxOTY0Njky', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEwNjA0MTgyNA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjAyMjA0NDI3', 'versionIndex': 4}}}
+2023-10-13 01:09:33,765 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: defer
+2023-10-13 01:09:33,765 INFO    SenderThread:8398 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-10-13 01:09:33,766 INFO    SenderThread:8398 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-10-13 01:09:34,295 INFO    SenderThread:8398 [dir_watcher.py:finish():388] scan: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files
+2023-10-13 01:09:34,296 INFO    SenderThread:8398 [dir_watcher.py:finish():402] scan save: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/config.yaml config.yaml
+2023-10-13 01:09:34,296 INFO    SenderThread:8398 [dir_watcher.py:finish():402] scan save: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log output.log
+2023-10-13 01:09:34,296 INFO    SenderThread:8398 [dir_watcher.py:finish():402] scan save: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/conda-environment.yaml conda-environment.yaml
+2023-10-13 01:09:34,309 INFO    SenderThread:8398 [dir_watcher.py:finish():402] scan save: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/requirements.txt requirements.txt
+2023-10-13 01:09:34,312 INFO    SenderThread:8398 [dir_watcher.py:finish():402] scan save: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/wandb-summary.json wandb-summary.json
+2023-10-13 01:09:34,313 INFO    SenderThread:8398 [dir_watcher.py:finish():402] scan save: /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/wandb-metadata.json wandb-metadata.json
+2023-10-13 01:09:34,319 INFO    SenderThread:8398 [sender.py:transition_state():613] send defer: 10
+2023-10-13 01:09:34,319 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: poll_exit
+2023-10-13 01:09:34,321 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: defer
+2023-10-13 01:09:34,322 INFO    HandlerThread:8398 [handler.py:handle_request_defer():172] handle defer: 10
+2023-10-13 01:09:34,329 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: defer
+2023-10-13 01:09:34,330 INFO    SenderThread:8398 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-10-13 01:09:34,330 INFO    SenderThread:8398 [file_pusher.py:finish():175] shutting down file pusher
+2023-10-13 01:09:34,514 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: poll_exit
+2023-10-13 01:09:34,514 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: poll_exit
+2023-10-13 01:09:34,585 INFO    wandb-upload_0:8398 [upload_job.py:push():131] Uploaded file /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/config.yaml
+2023-10-13 01:09:34,600 INFO    wandb-upload_1:8398 [upload_job.py:push():131] Uploaded file /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/output.log
+2023-10-13 01:09:34,637 INFO    wandb-upload_2:8398 [upload_job.py:push():131] Uploaded file /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/requirements.txt
+2023-10-13 01:09:34,667 INFO    wandb-upload_3:8398 [upload_job.py:push():131] Uploaded file /home/workspace/wandb/run-20231013_010433-12gdkwy0/files/wandb-summary.json
+2023-10-13 01:09:34,868 INFO    Thread-11 :8398 [sender.py:transition_state():613] send defer: 11
+2023-10-13 01:09:34,869 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: defer
+2023-10-13 01:09:34,869 INFO    HandlerThread:8398 [handler.py:handle_request_defer():172] handle defer: 11
+2023-10-13 01:09:34,869 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: defer
+2023-10-13 01:09:34,869 INFO    SenderThread:8398 [sender.py:send_request_defer():609] handle sender defer: 11
+2023-10-13 01:09:34,870 INFO    SenderThread:8398 [file_pusher.py:join():181] waiting for file pusher
+2023-10-13 01:09:34,870 INFO    SenderThread:8398 [sender.py:transition_state():613] send defer: 12
+2023-10-13 01:09:34,870 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: defer
+2023-10-13 01:09:34,870 INFO    HandlerThread:8398 [handler.py:handle_request_defer():172] handle defer: 12
+2023-10-13 01:09:34,870 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: defer
+2023-10-13 01:09:34,871 INFO    SenderThread:8398 [sender.py:send_request_defer():609] handle sender defer: 12
+2023-10-13 01:09:34,871 INFO    SenderThread:8398 [file_stream.py:finish():595] file stream finish called
+2023-10-13 01:09:35,092 INFO    SenderThread:8398 [file_stream.py:finish():599] file stream finish is done
+2023-10-13 01:09:35,092 INFO    SenderThread:8398 [sender.py:transition_state():613] send defer: 13
+2023-10-13 01:09:35,093 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: defer
+2023-10-13 01:09:35,093 INFO    HandlerThread:8398 [handler.py:handle_request_defer():172] handle defer: 13
+2023-10-13 01:09:35,094 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: defer
+2023-10-13 01:09:35,094 INFO    SenderThread:8398 [sender.py:send_request_defer():609] handle sender defer: 13
+2023-10-13 01:09:35,094 INFO    SenderThread:8398 [sender.py:transition_state():613] send defer: 14
+2023-10-13 01:09:35,095 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: defer
+2023-10-13 01:09:35,095 DEBUG   SenderThread:8398 [sender.py:send():380] send: final
+2023-10-13 01:09:35,095 INFO    HandlerThread:8398 [handler.py:handle_request_defer():172] handle defer: 14
+2023-10-13 01:09:35,095 DEBUG   SenderThread:8398 [sender.py:send():380] send: footer
+2023-10-13 01:09:35,096 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: defer
+2023-10-13 01:09:35,096 INFO    SenderThread:8398 [sender.py:send_request_defer():609] handle sender defer: 14
+2023-10-13 01:09:35,097 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: poll_exit
+2023-10-13 01:09:35,097 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: poll_exit
+2023-10-13 01:09:35,098 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: poll_exit
+2023-10-13 01:09:35,099 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: poll_exit
+2023-10-13 01:09:35,099 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: server_info
+2023-10-13 01:09:35,100 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: server_info
+2023-10-13 01:09:35,107 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: get_summary
+2023-10-13 01:09:35,108 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: sampled_history
+2023-10-13 01:09:35,109 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-13 01:09:35,110 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: job_info
+2023-10-13 01:09:35,151 DEBUG   SenderThread:8398 [sender.py:send_request():407] send_request: job_info
+2023-10-13 01:09:35,151 INFO    MainThread:8398 [wandb_run.py:_footer_history_summary_info():3599] rendering history
+2023-10-13 01:09:35,152 INFO    MainThread:8398 [wandb_run.py:_footer_history_summary_info():3631] rendering summary
+2023-10-13 01:09:35,152 INFO    MainThread:8398 [wandb_run.py:_footer_sync_info():3558] logging synced files
+2023-10-13 01:09:35,153 DEBUG   HandlerThread:8398 [handler.py:handle_request():146] handle_request: shutdown
+2023-10-13 01:09:35,153 INFO    HandlerThread:8398 [handler.py:finish():866] shutting down handler
+2023-10-13 01:09:36,111 INFO    WriterThread:8398 [datastore.py:close():294] close: /home/workspace/wandb/run-20231013_010433-12gdkwy0/run-12gdkwy0.wandb
+2023-10-13 01:09:36,151 INFO    SenderThread:8398 [sender.py:finish():1534] shutting down sender
+2023-10-13 01:09:36,151 INFO    SenderThread:8398 [file_pusher.py:finish():175] shutting down file pusher
+2023-10-13 01:09:36,151 INFO    SenderThread:8398 [file_pusher.py:join():181] waiting for file pusher

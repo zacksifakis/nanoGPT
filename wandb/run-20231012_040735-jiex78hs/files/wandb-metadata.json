@@ -1,0 +1,170 @@
+{
+    "os": "Linux-5.4.0-150-generic-x86_64-with-glibc2.10",
+    "python": "3.8.12",
+    "heartbeatAt": "2023-10-12T04:07:36.245286",
+    "startedAt": "2023-10-12T04:07:35.380853",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "config/train_shakespeare_char.py",
+        "--wandb_log=True",
+        "--wandb_project=cs839-question1",
+        "--wandb_run_name=l4h3",
+        "--out_dir=out-question2al4h3",
+        "--compile=False",
+        "--device=cuda:3",
+        "--n_layer=4",
+        "--n_head=3"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePathLocal": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/zacksifakis/nanoGPT.git",
+        "commit": "eba36e84649f3c6d840a93092cb779a260544d08"
+    },
+    "email": null,
+    "root": "/home/workspace",
+    "host": "d9d2f76a8eb8",
+    "username": "root",
+    "executable": "/opt/conda/bin/python",
+    "cpu_count": 10,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 1989.8481999999997,
+        "min": 1200.0,
+        "max": 4120.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1394.978,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3979.061,
+            "min": 1200.0,
+            "max": 4200.0
+        },
+        {
+            "current": 1200.04,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3485.907,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3938.011,
+            "min": 1200.0,
+            "max": 4200.0
+        },
+        {
+            "current": 1200.02,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1691.629,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.012,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.111,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.409,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3820.515,
+            "min": 1200.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3943.929,
+            "min": 1200.0,
+            "max": 4200.0
+        },
+        {
+            "current": 1200.081,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 2323.327,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.258,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.306,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1205.619,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1201.079,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1201.601,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.286,
+            "min": 1200.0,
+            "max": 4100.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 1832.6994857788086,
+            "used": 1066.6282920837402
+        }
+    },
+    "gpu": "GeForce RTX 2080 Ti",
+    "gpu_count": 4,
+    "gpu_devices": [
+        {
+            "name": "GeForce RTX 2080 Ti",
+            "memory_total": 11554717696
+        },
+        {
+            "name": "GeForce RTX 2080 Ti",
+            "memory_total": 11554717696
+        },
+        {
+            "name": "GeForce RTX 2080 Ti",
+            "memory_total": 11554717696
+        },
+        {
+            "name": "GeForce RTX 2080 Ti",
+            "memory_total": 11552096256
+        }
+    ],
+    "memory": {
+        "total": 125.48540496826172
+    }
+}

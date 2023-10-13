@@ -21,7 +21,10 @@ with open(input_file_path, 'r') as f:
 print(f"length of dataset in characters: {len(data):,}")
 
 # get all the unique characters that occur in this text
-chars = sorted(list(set(data)))
+new_shakespeare = set(data)
+new_shakespeare.add('@')
+chars= sorted(list(new_shakespeare))
+#chars = sorted(list(set(data)))
 vocab_size = len(chars)
 print("all the unique characters:", ''.join(chars))
 print(f"vocab size: {vocab_size:,}")

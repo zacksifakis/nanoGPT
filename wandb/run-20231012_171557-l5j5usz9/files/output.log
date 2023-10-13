@@ -1,0 +1,60 @@
+step 0: train loss 4.1987, val loss 4.2032
+iter 0: loss 4.2167, time 5430.75ms, mfu -100.00%
+iter 10: loss 3.2520, time 42.65ms, mfu 5.83%
+iter 20: loss 2.8026, time 41.13ms, mfu 5.85%
+iter 30: loss 2.6184, time 42.05ms, mfu 5.86%
+iter 40: loss 2.5485, time 42.36ms, mfu 5.86%
+iter 50: loss 2.5309, time 41.58ms, mfu 5.87%
+iter 60: loss 2.5051, time 43.10ms, mfu 5.86%
+iter 70: loss 2.5104, time 41.91ms, mfu 5.87%
+iter 80: loss 2.4795, time 42.39ms, mfu 5.87%
+iter 90: loss 2.4645, time 43.58ms, mfu 5.85%
+iter 100: loss 2.4546, time 43.26ms, mfu 5.84%
+iter 110: loss 2.4588, time 42.75ms, mfu 5.84%
+iter 120: loss 2.4570, time 42.64ms, mfu 5.84%
+iter 130: loss 2.4333, time 41.28ms, mfu 5.86%
+iter 140: loss 2.4026, time 41.29ms, mfu 5.87%
+iter 150: loss 2.3776, time 41.41ms, mfu 5.89%
+iter 160: loss 2.3354, time 43.57ms, mfu 5.87%
+iter 170: loss 2.2937, time 41.67ms, mfu 5.88%
+iter 180: loss 2.2022, time 43.08ms, mfu 5.87%
+iter 190: loss 2.1685, time 42.74ms, mfu 5.86%
+iter 200: loss 2.1490, time 42.03ms, mfu 5.87%
+iter 210: loss 2.1285, time 42.95ms, mfu 5.86%
+iter 220: loss 2.0781, time 43.22ms, mfu 5.85%
+iter 230: loss 2.0566, time 43.47ms, mfu 5.84%
+iter 240: loss 2.0633, time 43.10ms, mfu 5.83%
+step 250: train loss 1.9196, val loss 2.0426
+saving checkpoint to out-question2al4h2
+iter 250: loss 2.0335, time 4798.33ms, mfu 5.25%
+iter 260: loss 1.9912, time 43.44ms, mfu 5.30%
+iter 270: loss 1.9872, time 41.88ms, mfu 5.36%
+iter 280: loss 1.9418, time 43.24ms, mfu 5.40%
+iter 290: loss 1.9319, time 42.77ms, mfu 5.44%
+iter 300: loss 1.9340, time 43.40ms, mfu 5.47%
+iter 310: loss 1.9118, time 42.92ms, mfu 5.50%
+iter 320: loss 1.9161, time 43.27ms, mfu 5.53%
+iter 330: loss 1.9205, time 43.18ms, mfu 5.55%
+iter 340: loss 1.8674, time 41.84ms, mfu 5.59%
+iter 350: loss 1.8990, time 43.11ms, mfu 5.61%
+iter 360: loss 1.8540, time 42.80ms, mfu 5.63%
+iter 370: loss 1.8315, time 41.71ms, mfu 5.66%
+iter 380: loss 1.8445, time 42.55ms, mfu 5.68%
+iter 390: loss 1.8217, time 43.61ms, mfu 5.68%
+iter 400: loss 1.8310, time 43.44ms, mfu 5.69%
+iter 410: loss 1.7886, time 43.51ms, mfu 5.69%
+iter 420: loss 1.8193, time 43.35ms, mfu 5.69%
+iter 430: loss 1.7722, time 43.99ms, mfu 5.69%
+iter 440: loss 1.7603, time 43.49ms, mfu 5.69%
+iter 450: loss 1.7460, time 41.56ms, mfu 5.72%
+iter 460: loss 1.7811, time 43.37ms, mfu 5.72%
+iter 470: loss 1.7281, time 43.16ms, mfu 5.73%
+iter 480: loss 1.7031, time 43.23ms, mfu 5.73%
+Traceback (most recent call last):
+  File "train.py", line 305, in <module>
+    scaler.scale(loss).backward()
+  File "/opt/conda/lib/python3.8/site-packages/torch/_tensor.py", line 503, in backward
+    torch.autograd.backward(
+  File "/opt/conda/lib/python3.8/site-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

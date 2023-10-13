@@ -1,0 +1,674 @@
+2023-10-12 22:23:06,007 INFO    StreamThr :6341 [internal.py:wandb_internal():86] W&B internal server running at pid: 6341, started at: 2023-10-12 22:23:06.006014
+2023-10-12 22:23:06,009 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status
+2023-10-12 22:23:06,012 INFO    WriterThread:6341 [datastore.py:open_for_write():85] open: /home/workspace/wandb/run-20231012_222305-mle3ccp8/run-mle3ccp8.wandb
+2023-10-12 22:23:06,015 DEBUG   SenderThread:6341 [sender.py:send():380] send: header
+2023-10-12 22:23:06,081 DEBUG   SenderThread:6341 [sender.py:send():380] send: run
+2023-10-12 22:23:06,345 INFO    SenderThread:6341 [dir_watcher.py:__init__():211] watching files in: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files
+2023-10-12 22:23:06,346 INFO    SenderThread:6341 [sender.py:_start_run_threads():1122] run started: mle3ccp8 with start time 1697149386.004974
+2023-10-12 22:23:06,369 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: check_version
+2023-10-12 22:23:06,370 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: check_version
+2023-10-12 22:23:06,450 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: run_start
+2023-10-12 22:23:06,455 DEBUG   HandlerThread:6341 [system_info.py:__init__():32] System info init
+2023-10-12 22:23:06,456 DEBUG   HandlerThread:6341 [system_info.py:__init__():47] System info init done
+2023-10-12 22:23:06,456 INFO    HandlerThread:6341 [system_monitor.py:start():194] Starting system monitor
+2023-10-12 22:23:06,456 INFO    SystemMonitor:6341 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-10-12 22:23:06,456 INFO    HandlerThread:6341 [system_monitor.py:probe():214] Collecting system info
+2023-10-12 22:23:06,457 INFO    SystemMonitor:6341 [interfaces.py:start():190] Started cpu monitoring
+2023-10-12 22:23:06,458 INFO    SystemMonitor:6341 [interfaces.py:start():190] Started disk monitoring
+2023-10-12 22:23:06,460 INFO    SystemMonitor:6341 [interfaces.py:start():190] Started gpu monitoring
+2023-10-12 22:23:06,461 INFO    SystemMonitor:6341 [interfaces.py:start():190] Started memory monitoring
+2023-10-12 22:23:06,462 INFO    SystemMonitor:6341 [interfaces.py:start():190] Started network monitoring
+2023-10-12 22:23:06,877 DEBUG   HandlerThread:6341 [system_info.py:probe():196] Probing system
+2023-10-12 22:23:06,887 DEBUG   HandlerThread:6341 [system_info.py:_probe_git():181] Probing git
+2023-10-12 22:23:06,908 DEBUG   HandlerThread:6341 [system_info.py:_probe_git():189] Probing git done
+2023-10-12 22:23:06,908 DEBUG   HandlerThread:6341 [system_info.py:probe():244] Probing system done
+2023-10-12 22:23:06,908 DEBUG   HandlerThread:6341 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-150-generic-x86_64-with-glibc2.10', 'python': '3.8.12', 'heartbeatAt': '2023-10-12T22:23:06.877562', 'startedAt': '2023-10-12T22:23:05.994705', 'docker': None, 'cuda': None, 'args': ('config/train_my_dataset.py', '--out_dir=out-mydataset-train', '--wandb_log=True', '--wandb_project=cs839-question1', '--wandb_run_name=mydatasettrain'), 'state': 'running', 'program': 'train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/zacksifakis/nanoGPT.git', 'commit': 'eba36e84649f3c6d840a93092cb779a260544d08'}, 'email': None, 'root': '/home/workspace', 'host': 'd9d2f76a8eb8', 'username': 'root', 'executable': '/opt/conda/bin/python', 'cpu_count': 10, 'cpu_count_logical': 20, 'cpu_freq': {'current': 1497.0002499999998, 'min': 1200.0, 'max': 4120.0}, 'cpu_freq_per_core': [{'current': 1526.368, 'min': 1200.0, 'max': 4100.0}, {'current': 1300.086, 'min': 1200.0, 'max': 4200.0}, {'current': 1330.044, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.094, 'min': 1200.0, 'max': 4100.0}, {'current': 4102.218, 'min': 1200.0, 'max': 4200.0}, {'current': 1200.022, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.142, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.047, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.013, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.034, 'min': 1200.0, 'max': 4100.0}, {'current': 4189.311, 'min': 1200.0, 'max': 4200.0}, {'current': 1300.354, 'min': 1200.0, 'max': 4200.0}, {'current': 1200.113, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.059, 'min': 1200.0, 'max': 4100.0}, {'current': 1202.451, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.429, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.364, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.059, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.056, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.354, 'min': 1200.0, 'max': 4100.0}], 'disk': {'/': {'total': 1832.6994857788086, 'used': 1066.6413459777832}}, 'gpu': 'GeForce RTX 2080 Ti', 'gpu_count': 4, 'gpu_devices': [{'name': 'GeForce RTX 2080 Ti', 'memory_total': 11554717696}, {'name': 'GeForce RTX 2080 Ti', 'memory_total': 11554717696}, {'name': 'GeForce RTX 2080 Ti', 'memory_total': 11554717696}, {'name': 'GeForce RTX 2080 Ti', 'memory_total': 11552096256}], 'memory': {'total': 125.48540496826172}}
+2023-10-12 22:23:06,908 INFO    HandlerThread:6341 [system_monitor.py:probe():224] Finished collecting system info
+2023-10-12 22:23:06,909 INFO    HandlerThread:6341 [system_monitor.py:probe():227] Publishing system info
+2023-10-12 22:23:06,909 DEBUG   HandlerThread:6341 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-10-12 22:23:06,910 DEBUG   HandlerThread:6341 [system_info.py:_save_pip():68] Saving pip packages done
+2023-10-12 22:23:06,910 DEBUG   HandlerThread:6341 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-10-12 22:23:07,352 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_created():271] file/dir created: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/conda-environment.yaml
+2023-10-12 22:23:07,353 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_created():271] file/dir created: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/requirements.txt
+2023-10-12 22:23:07,366 DEBUG   HandlerThread:6341 [system_info.py:_save_conda():87] Saving conda packages done
+2023-10-12 22:23:07,368 INFO    HandlerThread:6341 [system_monitor.py:probe():229] Finished publishing system info
+2023-10-12 22:23:07,381 DEBUG   SenderThread:6341 [sender.py:send():380] send: files
+2023-10-12 22:23:07,382 INFO    SenderThread:6341 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-10-12 22:23:07,397 DEBUG   SenderThread:6341 [sender.py:send():380] send: telemetry
+2023-10-12 22:23:07,398 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:23:07,398 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:23:07,403 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:23:07,710 INFO    wandb-upload_0:6341 [upload_job.py:push():131] Uploaded file /tmp/tmpeuft_lwfwandb/kiemc98c-wandb-metadata.json
+2023-10-12 22:23:08,347 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_created():271] file/dir created: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/wandb-metadata.json
+2023-10-12 22:23:11,514 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:23:16,515 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:23:19,023 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-12 22:23:19,026 DEBUG   SenderThread:6341 [sender.py:send():380] send: history
+2023-10-12 22:23:19,027 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: summary_record
+2023-10-12 22:23:19,032 INFO    SenderThread:6341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-12 22:23:19,352 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_created():271] file/dir created: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:23:19,353 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_created():271] file/dir created: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/wandb-summary.json
+2023-10-12 22:23:21,354 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:23:22,033 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:23:22,415 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:23:22,416 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:23:22,427 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:23:27,490 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:23:31,359 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:23:32,763 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:23:33,360 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:23:35,361 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:23:37,362 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:23:37,394 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:23:37,395 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:23:37,401 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:23:37,906 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:23:38,363 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/config.yaml
+2023-10-12 22:23:39,363 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:23:41,365 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:23:43,175 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:23:43,366 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:23:48,176 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:23:50,597 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-12 22:23:50,599 DEBUG   SenderThread:6341 [sender.py:send():380] send: history
+2023-10-12 22:23:50,600 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: summary_record
+2023-10-12 22:23:50,605 INFO    SenderThread:6341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-12 22:23:51,370 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/wandb-summary.json
+2023-10-12 22:23:52,412 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:23:52,412 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:23:52,420 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:23:53,371 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:23:53,516 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:23:58,517 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:24:03,376 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:24:03,591 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:24:05,377 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:24:06,462 DEBUG   SystemMonitor:6341 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-10-12 22:24:06,466 DEBUG   SenderThread:6341 [sender.py:send():380] send: stats
+2023-10-12 22:24:07,378 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:24:07,397 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:24:07,398 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:24:07,404 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:24:08,741 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:24:09,379 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:24:11,381 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:24:13,382 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:24:14,031 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:24:19,032 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:24:21,501 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-12 22:24:21,503 DEBUG   SenderThread:6341 [sender.py:send():380] send: history
+2023-10-12 22:24:21,503 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: summary_record
+2023-10-12 22:24:21,508 INFO    SenderThread:6341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-12 22:24:22,386 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/wandb-summary.json
+2023-10-12 22:24:22,422 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:24:22,423 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:24:22,424 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:24:23,387 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:24:24,548 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:24:29,549 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:24:33,392 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:24:34,689 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:24:35,394 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:24:36,468 DEBUG   SenderThread:6341 [sender.py:send():380] send: stats
+2023-10-12 22:24:37,395 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:24:37,398 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:24:37,399 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:24:37,403 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:24:39,396 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:24:39,851 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:24:41,397 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:24:43,398 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:24:45,151 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:24:45,399 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:24:50,152 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:24:52,379 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-12 22:24:52,382 DEBUG   SenderThread:6341 [sender.py:send():380] send: history
+2023-10-12 22:24:52,382 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: summary_record
+2023-10-12 22:24:52,383 INFO    SenderThread:6341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-12 22:24:52,403 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/wandb-summary.json
+2023-10-12 22:24:52,793 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:24:52,796 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:24:52,797 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:24:55,405 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:24:55,861 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:25:00,862 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:25:05,410 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:25:06,082 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:25:06,470 DEBUG   SenderThread:6341 [sender.py:send():380] send: stats
+2023-10-12 22:25:07,407 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:25:07,407 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:25:07,408 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:25:07,416 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:25:09,417 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:25:11,258 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:25:11,418 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:25:13,419 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:25:15,420 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:25:16,351 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:25:16,421 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:25:21,352 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:25:22,408 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:25:22,408 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:25:22,409 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:25:23,705 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-12 22:25:23,708 DEBUG   SenderThread:6341 [sender.py:send():380] send: history
+2023-10-12 22:25:23,709 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: summary_record
+2023-10-12 22:25:23,709 INFO    SenderThread:6341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-12 22:25:24,425 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/wandb-summary.json
+2023-10-12 22:25:25,425 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:25:26,711 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:25:31,712 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:25:35,430 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:25:36,479 DEBUG   SenderThread:6341 [sender.py:send():380] send: stats
+2023-10-12 22:25:36,828 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:25:37,406 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:25:37,406 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:25:37,407 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:25:37,431 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:25:39,432 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:25:41,433 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:25:42,284 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:25:43,435 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:25:45,436 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:25:47,437 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:25:48,270 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:25:52,407 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:25:52,407 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:25:52,408 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:25:53,530 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:25:54,851 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-12 22:25:54,854 DEBUG   SenderThread:6341 [sender.py:send():380] send: history
+2023-10-12 22:25:54,855 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: summary_record
+2023-10-12 22:25:54,855 INFO    SenderThread:6341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-12 22:25:55,441 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/wandb-summary.json
+2023-10-12 22:25:57,442 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:25:58,856 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:26:03,857 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:26:06,475 DEBUG   SenderThread:6341 [sender.py:send():380] send: stats
+2023-10-12 22:26:07,408 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:26:07,409 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:26:07,410 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:26:07,448 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:26:09,093 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:26:09,449 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:26:11,450 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:26:13,451 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:26:14,559 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:26:15,452 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:26:17,453 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:26:19,455 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:26:20,544 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:26:22,406 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:26:22,407 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:26:22,408 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:26:25,838 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-12 22:26:25,843 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:26:25,844 DEBUG   SenderThread:6341 [sender.py:send():380] send: history
+2023-10-12 22:26:25,845 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: summary_record
+2023-10-12 22:26:25,846 INFO    SenderThread:6341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-12 22:26:26,458 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/wandb-summary.json
+2023-10-12 22:26:27,459 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:26:30,847 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:26:36,317 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:26:36,477 DEBUG   SenderThread:6341 [sender.py:send():380] send: stats
+2023-10-12 22:26:37,408 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:26:37,408 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:26:37,409 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:26:37,464 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:26:39,466 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:26:41,467 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:26:41,761 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:26:43,468 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:26:45,469 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:26:47,219 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:26:47,470 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:26:49,471 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:26:52,221 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:26:52,406 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:26:52,406 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:26:52,407 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:26:56,870 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-12 22:26:56,872 DEBUG   SenderThread:6341 [sender.py:send():380] send: history
+2023-10-12 22:26:56,873 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: summary_record
+2023-10-12 22:26:56,873 INFO    SenderThread:6341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-12 22:26:57,475 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:26:57,476 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/wandb-summary.json
+2023-10-12 22:26:57,874 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:27:02,876 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:27:06,480 DEBUG   SenderThread:6341 [sender.py:send():380] send: stats
+2023-10-12 22:27:07,406 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:27:07,406 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:27:07,407 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:27:07,482 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:27:07,880 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:27:09,483 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:27:11,484 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:27:13,331 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:27:13,485 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:27:15,487 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:27:17,488 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:27:18,765 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:27:19,489 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:27:21,490 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:27:22,421 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:27:22,457 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:27:22,458 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:27:23,491 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:27:24,525 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:27:28,717 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-12 22:27:28,720 DEBUG   SenderThread:6341 [sender.py:send():380] send: history
+2023-10-12 22:27:28,720 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: summary_record
+2023-10-12 22:27:28,726 INFO    SenderThread:6341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-12 22:27:29,494 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:27:29,495 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/wandb-summary.json
+2023-10-12 22:27:29,727 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:27:34,729 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:27:36,482 DEBUG   SenderThread:6341 [sender.py:send():380] send: stats
+2023-10-12 22:27:37,406 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:27:37,407 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:27:37,408 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:27:37,499 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:27:39,500 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:27:40,205 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:27:41,501 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:27:43,502 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:27:45,503 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:27:45,671 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:27:47,505 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:27:49,506 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:27:50,956 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:27:52,410 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:27:52,410 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:27:52,410 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:27:56,524 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:27:58,037 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-12 22:27:58,039 DEBUG   SenderThread:6341 [sender.py:send():380] send: history
+2023-10-12 22:27:58,043 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: summary_record
+2023-10-12 22:27:58,043 INFO    SenderThread:6341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-12 22:27:58,511 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/wandb-summary.json
+2023-10-12 22:27:59,511 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:28:02,045 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:28:05,515 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:28:06,484 DEBUG   SenderThread:6341 [sender.py:send():380] send: stats
+2023-10-12 22:28:07,340 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:28:07,408 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:28:07,409 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:28:07,409 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:28:07,516 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:28:09,517 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:28:11,518 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:28:12,816 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:28:13,519 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:28:15,520 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:28:17,521 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:28:18,765 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:28:19,522 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:28:22,409 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:28:22,410 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:28:22,410 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:28:24,561 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:28:26,809 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-12 22:28:26,811 DEBUG   SenderThread:6341 [sender.py:send():380] send: history
+2023-10-12 22:28:26,812 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: summary_record
+2023-10-12 22:28:26,812 INFO    SenderThread:6341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-12 22:28:27,526 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:28:27,527 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/wandb-summary.json
+2023-10-12 22:28:29,814 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:28:34,911 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:28:35,531 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:28:36,487 DEBUG   SenderThread:6341 [sender.py:send():380] send: stats
+2023-10-12 22:28:37,407 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:28:37,408 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:28:37,413 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:28:37,532 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:28:39,533 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:28:40,380 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:28:41,534 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:28:43,535 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:28:45,536 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:28:45,868 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:28:47,537 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:28:50,968 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:28:52,409 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:28:52,410 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:28:52,410 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:28:56,022 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:28:56,061 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-12 22:28:56,064 DEBUG   SenderThread:6341 [sender.py:send():380] send: history
+2023-10-12 22:28:56,064 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: summary_record
+2023-10-12 22:28:56,065 INFO    SenderThread:6341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-12 22:28:56,542 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/wandb-summary.json
+2023-10-12 22:28:57,542 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:29:01,067 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:29:03,546 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:29:05,547 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:29:06,365 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:29:06,489 DEBUG   SenderThread:6341 [sender.py:send():380] send: stats
+2023-10-12 22:29:07,408 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:29:07,408 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:29:07,416 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:29:07,548 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:29:09,548 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:29:11,550 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:29:11,849 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:29:13,551 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:29:15,552 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:29:17,553 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:29:17,735 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:29:19,554 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:29:22,408 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:29:22,408 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:29:22,415 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:29:22,999 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:29:23,041 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-12 22:29:23,043 DEBUG   SenderThread:6341 [sender.py:send():380] send: history
+2023-10-12 22:29:23,043 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: summary_record
+2023-10-12 22:29:23,044 INFO    SenderThread:6341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-12 22:29:23,556 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:29:23,556 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/wandb-summary.json
+2023-10-12 22:29:25,557 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:29:27,558 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:29:28,069 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:29:29,559 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:29:31,560 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:29:33,090 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:29:33,561 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:29:35,562 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:29:36,498 DEBUG   SenderThread:6341 [sender.py:send():380] send: stats
+2023-10-12 22:29:37,410 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:29:37,410 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:29:37,410 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:29:37,564 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:29:38,534 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:29:43,207 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-12 22:29:43,208 DEBUG   SenderThread:6341 [sender.py:send():380] send: history
+2023-10-12 22:29:43,209 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: summary_record
+2023-10-12 22:29:43,209 INFO    SenderThread:6341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-12 22:29:43,567 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:29:43,567 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/wandb-summary.json
+2023-10-12 22:29:43,825 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:29:45,568 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:29:47,569 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:29:48,860 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:29:49,570 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:29:51,571 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:29:52,408 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:29:52,408 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:29:52,415 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:29:53,572 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:29:53,900 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:29:55,573 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:29:57,574 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:29:59,697 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:30:03,471 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-12 22:30:03,474 DEBUG   SenderThread:6341 [sender.py:send():380] send: history
+2023-10-12 22:30:03,474 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: summary_record
+2023-10-12 22:30:03,475 INFO    SenderThread:6341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-12 22:30:03,577 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/wandb-summary.json
+2023-10-12 22:30:05,208 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:30:05,578 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:30:06,494 DEBUG   SenderThread:6341 [sender.py:send():380] send: stats
+2023-10-12 22:30:07,408 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:30:07,408 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:30:07,409 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:30:07,579 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:30:09,581 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:30:10,243 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:30:11,582 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:30:13,583 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:30:15,280 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:30:15,584 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:30:17,585 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:30:20,960 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:30:22,409 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:30:22,409 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:30:22,415 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:30:23,797 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-12 22:30:23,799 DEBUG   SenderThread:6341 [sender.py:send():380] send: history
+2023-10-12 22:30:23,800 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: summary_record
+2023-10-12 22:30:23,800 INFO    SenderThread:6341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-12 22:30:24,588 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/wandb-summary.json
+2023-10-12 22:30:25,589 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:30:26,053 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:30:27,590 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:30:29,591 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:30:31,088 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:30:31,592 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:30:33,593 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:30:35,595 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:30:36,121 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:30:36,496 DEBUG   SenderThread:6341 [sender.py:send():380] send: stats
+2023-10-12 22:30:37,408 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:30:37,409 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:30:37,409 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:30:37,596 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:30:41,527 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:30:44,036 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-12 22:30:44,038 DEBUG   SenderThread:6341 [sender.py:send():380] send: history
+2023-10-12 22:30:44,039 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: summary_record
+2023-10-12 22:30:44,039 INFO    SenderThread:6341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-12 22:30:44,599 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/wandb-summary.json
+2023-10-12 22:30:45,600 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:30:46,897 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:30:47,601 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:30:49,602 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:30:51,603 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:30:51,936 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:30:52,409 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:30:52,409 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:30:52,410 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:30:53,604 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:30:55,605 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:30:56,969 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:30:57,606 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:30:59,607 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:31:02,529 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:31:04,322 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-12 22:31:04,324 DEBUG   SenderThread:6341 [sender.py:send():380] send: history
+2023-10-12 22:31:04,324 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: summary_record
+2023-10-12 22:31:04,325 INFO    SenderThread:6341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-12 22:31:04,610 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/wandb-summary.json
+2023-10-12 22:31:05,610 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:31:06,498 DEBUG   SenderThread:6341 [sender.py:send():380] send: stats
+2023-10-12 22:31:07,409 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:31:07,409 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:31:07,412 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:31:07,611 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:31:07,740 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:31:09,613 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:31:11,614 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:31:12,780 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:31:13,615 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:31:15,616 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:31:17,617 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:31:17,821 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:31:19,618 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:31:22,409 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:31:22,409 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:31:22,410 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:31:23,484 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:31:24,615 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-12 22:31:24,618 DEBUG   SenderThread:6341 [sender.py:send():380] send: history
+2023-10-12 22:31:24,618 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: summary_record
+2023-10-12 22:31:24,619 INFO    SenderThread:6341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-12 22:31:24,620 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/wandb-summary.json
+2023-10-12 22:31:25,621 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:31:27,622 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:31:28,593 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:31:29,623 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:31:31,624 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:31:33,625 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:31:33,633 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:31:35,626 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:31:36,501 DEBUG   SenderThread:6341 [sender.py:send():380] send: stats
+2023-10-12 22:31:37,409 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:31:37,410 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:31:37,410 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:31:37,627 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:31:39,154 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:31:39,628 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:31:44,155 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:31:44,905 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-12 22:31:44,907 DEBUG   SenderThread:6341 [sender.py:send():380] send: history
+2023-10-12 22:31:44,910 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: summary_record
+2023-10-12 22:31:44,911 INFO    SenderThread:6341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-12 22:31:45,631 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:31:45,632 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/wandb-summary.json
+2023-10-12 22:31:47,632 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:31:49,454 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:31:49,633 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:31:51,634 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:31:52,412 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: stop_status
+2023-10-12 22:31:52,412 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:31:52,413 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: stop_status
+2023-10-12 22:31:53,635 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:31:54,534 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:31:55,636 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:31:57,637 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:31:59,638 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:32:00,458 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:32:05,289 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: partial_history
+2023-10-12 22:32:05,293 DEBUG   SenderThread:6341 [sender.py:send():380] send: history
+2023-10-12 22:32:05,293 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: summary_record
+2023-10-12 22:32:05,294 INFO    SenderThread:6341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-12 22:32:05,347 DEBUG   SenderThread:6341 [sender.py:send():380] send: exit
+2023-10-12 22:32:05,348 INFO    SenderThread:6341 [sender.py:send_exit():585] handling exit code: 0
+2023-10-12 22:32:05,348 INFO    SenderThread:6341 [sender.py:send_exit():587] handling runtime: 538
+2023-10-12 22:32:05,348 INFO    SenderThread:6341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-12 22:32:05,349 INFO    SenderThread:6341 [sender.py:send_exit():593] send defer
+2023-10-12 22:32:05,349 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: defer
+2023-10-12 22:32:05,349 INFO    HandlerThread:6341 [handler.py:handle_request_defer():172] handle defer: 0
+2023-10-12 22:32:05,350 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: defer
+2023-10-12 22:32:05,350 INFO    SenderThread:6341 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-10-12 22:32:05,350 INFO    SenderThread:6341 [sender.py:transition_state():613] send defer: 1
+2023-10-12 22:32:05,350 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: defer
+2023-10-12 22:32:05,350 INFO    HandlerThread:6341 [handler.py:handle_request_defer():172] handle defer: 1
+2023-10-12 22:32:05,351 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: defer
+2023-10-12 22:32:05,351 INFO    SenderThread:6341 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-10-12 22:32:05,351 INFO    SenderThread:6341 [sender.py:transition_state():613] send defer: 2
+2023-10-12 22:32:05,351 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: defer
+2023-10-12 22:32:05,351 INFO    HandlerThread:6341 [handler.py:handle_request_defer():172] handle defer: 2
+2023-10-12 22:32:05,351 INFO    HandlerThread:6341 [system_monitor.py:finish():203] Stopping system monitor
+2023-10-12 22:32:05,352 DEBUG   SystemMonitor:6341 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-10-12 22:32:05,352 INFO    HandlerThread:6341 [interfaces.py:finish():202] Joined cpu monitor
+2023-10-12 22:32:05,352 DEBUG   SystemMonitor:6341 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-10-12 22:32:05,353 INFO    HandlerThread:6341 [interfaces.py:finish():202] Joined disk monitor
+2023-10-12 22:32:05,405 INFO    HandlerThread:6341 [interfaces.py:finish():202] Joined gpu monitor
+2023-10-12 22:32:05,405 INFO    HandlerThread:6341 [interfaces.py:finish():202] Joined memory monitor
+2023-10-12 22:32:05,405 INFO    HandlerThread:6341 [interfaces.py:finish():202] Joined network monitor
+2023-10-12 22:32:05,406 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: defer
+2023-10-12 22:32:05,406 INFO    SenderThread:6341 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-10-12 22:32:05,406 INFO    SenderThread:6341 [sender.py:transition_state():613] send defer: 3
+2023-10-12 22:32:05,406 DEBUG   SenderThread:6341 [sender.py:send():380] send: stats
+2023-10-12 22:32:05,406 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: defer
+2023-10-12 22:32:05,407 INFO    HandlerThread:6341 [handler.py:handle_request_defer():172] handle defer: 3
+2023-10-12 22:32:05,408 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: defer
+2023-10-12 22:32:05,408 INFO    SenderThread:6341 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-10-12 22:32:05,408 INFO    SenderThread:6341 [sender.py:transition_state():613] send defer: 4
+2023-10-12 22:32:05,408 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: defer
+2023-10-12 22:32:05,408 INFO    HandlerThread:6341 [handler.py:handle_request_defer():172] handle defer: 4
+2023-10-12 22:32:05,409 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: defer
+2023-10-12 22:32:05,409 INFO    SenderThread:6341 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-10-12 22:32:05,409 INFO    SenderThread:6341 [sender.py:transition_state():613] send defer: 5
+2023-10-12 22:32:05,409 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: defer
+2023-10-12 22:32:05,409 INFO    HandlerThread:6341 [handler.py:handle_request_defer():172] handle defer: 5
+2023-10-12 22:32:05,410 DEBUG   SenderThread:6341 [sender.py:send():380] send: summary
+2023-10-12 22:32:05,410 INFO    SenderThread:6341 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-12 22:32:05,411 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: defer
+2023-10-12 22:32:05,411 INFO    SenderThread:6341 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-10-12 22:32:05,411 INFO    SenderThread:6341 [sender.py:transition_state():613] send defer: 6
+2023-10-12 22:32:05,411 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: defer
+2023-10-12 22:32:05,411 INFO    HandlerThread:6341 [handler.py:handle_request_defer():172] handle defer: 6
+2023-10-12 22:32:05,412 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: defer
+2023-10-12 22:32:05,412 INFO    SenderThread:6341 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-10-12 22:32:05,412 INFO    SenderThread:6341 [sender.py:transition_state():613] send defer: 7
+2023-10-12 22:32:05,412 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: status_report
+2023-10-12 22:32:05,412 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: defer
+2023-10-12 22:32:05,412 INFO    HandlerThread:6341 [handler.py:handle_request_defer():172] handle defer: 7
+2023-10-12 22:32:05,413 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: defer
+2023-10-12 22:32:05,413 INFO    SenderThread:6341 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-10-12 22:32:05,642 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:32:05,642 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/wandb-summary.json
+2023-10-12 22:32:06,348 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: poll_exit
+2023-10-12 22:32:07,023 INFO    SenderThread:6341 [sender.py:transition_state():613] send defer: 8
+2023-10-12 22:32:07,024 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: poll_exit
+2023-10-12 22:32:07,024 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: defer
+2023-10-12 22:32:07,024 INFO    HandlerThread:6341 [handler.py:handle_request_defer():172] handle defer: 8
+2023-10-12 22:32:07,025 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: defer
+2023-10-12 22:32:07,025 INFO    SenderThread:6341 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-10-12 22:32:07,025 INFO    SenderThread:6341 [job_builder.py:build():281] Attempting to build job artifact
+2023-10-12 22:32:07,026 INFO    SenderThread:6341 [job_builder.py:_get_source_type():393] is repo sourced job
+2023-10-12 22:32:07,032 INFO    SenderThread:6341 [job_builder.py:build():369] adding wandb-job metadata file
+2023-10-12 22:32:07,042 INFO    SenderThread:6341 [sender.py:transition_state():613] send defer: 9
+2023-10-12 22:32:07,043 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: defer
+2023-10-12 22:32:07,043 DEBUG   SenderThread:6341 [sender.py:send():380] send: artifact
+2023-10-12 22:32:07,043 INFO    HandlerThread:6341 [handler.py:handle_request_defer():172] handle defer: 9
+2023-10-12 22:32:07,349 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: poll_exit
+2023-10-12 22:32:07,398 INFO    SenderThread:6341 [sender.py:send_artifact():1456] sent artifact job-https___github.com_zacksifakis_nanoGPT.git_train.py - {'id': 'QXJ0aWZhY3Q6NjAxOTY0Njky', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEwNjA0MTgyNA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjAyMjA0NDI3', 'versionIndex': 4}}}
+2023-10-12 22:32:07,398 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: defer
+2023-10-12 22:32:07,398 INFO    SenderThread:6341 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-10-12 22:32:07,398 INFO    SenderThread:6341 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-10-12 22:32:07,643 INFO    Thread-12 :6341 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:32:07,644 INFO    SenderThread:6341 [dir_watcher.py:finish():388] scan: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files
+2023-10-12 22:32:07,644 INFO    SenderThread:6341 [dir_watcher.py:finish():402] scan save: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/config.yaml config.yaml
+2023-10-12 22:32:07,645 INFO    SenderThread:6341 [dir_watcher.py:finish():402] scan save: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log output.log
+2023-10-12 22:32:07,651 INFO    SenderThread:6341 [dir_watcher.py:finish():402] scan save: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/conda-environment.yaml conda-environment.yaml
+2023-10-12 22:32:07,658 INFO    SenderThread:6341 [dir_watcher.py:finish():402] scan save: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/requirements.txt requirements.txt
+2023-10-12 22:32:07,661 INFO    SenderThread:6341 [dir_watcher.py:finish():402] scan save: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/wandb-summary.json wandb-summary.json
+2023-10-12 22:32:07,661 INFO    SenderThread:6341 [dir_watcher.py:finish():402] scan save: /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/wandb-metadata.json wandb-metadata.json
+2023-10-12 22:32:07,662 INFO    SenderThread:6341 [sender.py:transition_state():613] send defer: 10
+2023-10-12 22:32:07,668 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: poll_exit
+2023-10-12 22:32:07,675 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: defer
+2023-10-12 22:32:07,677 INFO    HandlerThread:6341 [handler.py:handle_request_defer():172] handle defer: 10
+2023-10-12 22:32:07,678 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: defer
+2023-10-12 22:32:07,678 INFO    SenderThread:6341 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-10-12 22:32:07,678 INFO    SenderThread:6341 [file_pusher.py:finish():175] shutting down file pusher
+2023-10-12 22:32:07,947 INFO    wandb-upload_1:6341 [upload_job.py:push():131] Uploaded file /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/output.log
+2023-10-12 22:32:08,006 INFO    wandb-upload_2:6341 [upload_job.py:push():131] Uploaded file /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/requirements.txt
+2023-10-12 22:32:08,011 INFO    wandb-upload_0:6341 [upload_job.py:push():131] Uploaded file /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/config.yaml
+2023-10-12 22:32:08,030 INFO    wandb-upload_3:6341 [upload_job.py:push():131] Uploaded file /home/workspace/wandb/run-20231012_222305-mle3ccp8/files/wandb-summary.json
+2023-10-12 22:32:08,231 INFO    Thread-11 :6341 [sender.py:transition_state():613] send defer: 11
+2023-10-12 22:32:08,232 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: defer
+2023-10-12 22:32:08,232 INFO    HandlerThread:6341 [handler.py:handle_request_defer():172] handle defer: 11
+2023-10-12 22:32:08,233 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: defer
+2023-10-12 22:32:08,233 INFO    SenderThread:6341 [sender.py:send_request_defer():609] handle sender defer: 11
+2023-10-12 22:32:08,233 INFO    SenderThread:6341 [file_pusher.py:join():181] waiting for file pusher
+2023-10-12 22:32:08,233 INFO    SenderThread:6341 [sender.py:transition_state():613] send defer: 12
+2023-10-12 22:32:08,233 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: defer
+2023-10-12 22:32:08,233 INFO    HandlerThread:6341 [handler.py:handle_request_defer():172] handle defer: 12
+2023-10-12 22:32:08,234 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: defer
+2023-10-12 22:32:08,234 INFO    SenderThread:6341 [sender.py:send_request_defer():609] handle sender defer: 12
+2023-10-12 22:32:08,234 INFO    SenderThread:6341 [file_stream.py:finish():595] file stream finish called
+2023-10-12 22:32:08,303 INFO    SenderThread:6341 [file_stream.py:finish():599] file stream finish is done
+2023-10-12 22:32:08,303 INFO    SenderThread:6341 [sender.py:transition_state():613] send defer: 13
+2023-10-12 22:32:08,304 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: defer
+2023-10-12 22:32:08,304 INFO    HandlerThread:6341 [handler.py:handle_request_defer():172] handle defer: 13
+2023-10-12 22:32:08,305 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: defer
+2023-10-12 22:32:08,305 INFO    SenderThread:6341 [sender.py:send_request_defer():609] handle sender defer: 13
+2023-10-12 22:32:08,305 INFO    SenderThread:6341 [sender.py:transition_state():613] send defer: 14
+2023-10-12 22:32:08,306 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: defer
+2023-10-12 22:32:08,306 DEBUG   SenderThread:6341 [sender.py:send():380] send: final
+2023-10-12 22:32:08,306 INFO    HandlerThread:6341 [handler.py:handle_request_defer():172] handle defer: 14
+2023-10-12 22:32:08,306 DEBUG   SenderThread:6341 [sender.py:send():380] send: footer
+2023-10-12 22:32:08,306 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: defer
+2023-10-12 22:32:08,307 INFO    SenderThread:6341 [sender.py:send_request_defer():609] handle sender defer: 14
+2023-10-12 22:32:08,308 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: poll_exit
+2023-10-12 22:32:08,308 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: poll_exit
+2023-10-12 22:32:08,309 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: poll_exit
+2023-10-12 22:32:08,310 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: poll_exit
+2023-10-12 22:32:08,311 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: server_info
+2023-10-12 22:32:08,311 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: server_info
+2023-10-12 22:32:08,319 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: get_summary
+2023-10-12 22:32:08,320 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: sampled_history
+2023-10-12 22:32:08,322 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: internal_messages
+2023-10-12 22:32:08,322 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: job_info
+2023-10-12 22:32:08,352 DEBUG   SenderThread:6341 [sender.py:send_request():407] send_request: job_info
+2023-10-12 22:32:08,352 INFO    MainThread:6341 [wandb_run.py:_footer_history_summary_info():3599] rendering history
+2023-10-12 22:32:08,353 INFO    MainThread:6341 [wandb_run.py:_footer_history_summary_info():3631] rendering summary
+2023-10-12 22:32:08,353 INFO    MainThread:6341 [wandb_run.py:_footer_sync_info():3558] logging synced files
+2023-10-12 22:32:08,354 DEBUG   HandlerThread:6341 [handler.py:handle_request():146] handle_request: shutdown
+2023-10-12 22:32:08,354 INFO    HandlerThread:6341 [handler.py:finish():866] shutting down handler
+2023-10-12 22:32:09,323 INFO    WriterThread:6341 [datastore.py:close():294] close: /home/workspace/wandb/run-20231012_222305-mle3ccp8/run-mle3ccp8.wandb
+2023-10-12 22:32:09,352 INFO    SenderThread:6341 [sender.py:finish():1534] shutting down sender
+2023-10-12 22:32:09,352 INFO    SenderThread:6341 [file_pusher.py:finish():175] shutting down file pusher
+2023-10-12 22:32:09,352 INFO    SenderThread:6341 [file_pusher.py:join():181] waiting for file pusher
